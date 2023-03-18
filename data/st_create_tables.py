@@ -10,13 +10,16 @@ import pandas as pd
 # COMMAND ----------
 
 # MAGIC %md Create Delta tables from csv files
+# MAGIC Download the below csv file to your laptop, then upload them to your workspace and update the dbfs location in the cell below
+# MAGIC 
+# MAGIC [Data Files to download](https://drive.google.com/file/d/1TH05uj_M0xpfChKh41AuR_W8TUM6pjMq/view?usp=sharing)
 
 # COMMAND ----------
 
 # Enter your dbfs locations for each data file
-dbfs_file_locations = {'ticket':     '/Workspace/Repos/omar.hamdan@databricks.com/databricks_feature_store/data/passenger_ticket.csv',
-                      'demographic': '/Workspace/Repos/omar.hamdan@databricks.com/databricks_feature_store/data/passenger_demographic.csv',
-                      'labels':      '/Workspace/Repos/omar.hamdan@databricks.com/databricks_feature_store/data/passenger_labels.csv'}
+dbfs_file_locations = {'ticket':     '/dbfs/FileStore/ohfs/passenger_ticket.csv',
+                      'demographic': '/dbfs/FileStore/ohfs/passenger_demographic.csv',
+                      'labels':      '/dbfs/FileStore/ohfs/passenger_labels.csv'}
 
 
 def create_tables(dbfs_file_location=dbfs_file_locations):

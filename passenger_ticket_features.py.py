@@ -93,4 +93,4 @@ fs.write_table(
 
 # MAGIC %sql
 # MAGIC 
-# MAGIC -- DROP TABLE IF EXISTS default.ticket_features;
+# MAGIC -- DROP TABLE IF EXISTS ohamdan_fs_demo.ticket_features;

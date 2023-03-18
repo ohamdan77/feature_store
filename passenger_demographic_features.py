@@ -95,4 +95,4 @@ fs.write_table(
 
 # MAGIC %sql
 # MAGIC 
-# MAGIC -- DROP TABLE IF EXISTS default.demographic_features;
+# MAGIC -- DROP TABLE IF EXISTS ohamdan_fs_demo.demographic_features;
